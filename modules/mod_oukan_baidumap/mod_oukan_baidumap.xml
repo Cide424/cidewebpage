@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6" method="upgrade">
+	<name>Oukan Baidu Map</name>
+	<creationDate>2014-05-20</creationDate>
+	<author>Oukan</author>
+	<authorEmail>oukan@126.com</authorEmail>
+	<authorUrl>http://www.oukan.net</authorUrl>
+	<copyright>Copyright (C) 2014  Open Source Matters. All rights reserved.</copyright>	
+	<license></license>
+	<version>1.0</version>
+	<description>百度地图模块，请到 http://api.map.baidu.com/lbsapi/creatmap/index.html 获取地图的坐标,访问<a href="http://www.oukan.net" target="_blank">偶看博客</a></description>
+	<files>
+		<filename module="mod_oukan_baidumap">mod_oukan_baidumap.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_oukan_baidumap.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_oukan_baidumap.ini</language>
+    	<language tag="zh-CN">language/zh-CN.mod_oukan_baidumap.ini</language>            
+	</languages>
+	<params>
+		<param name="classname" type="text" default="" label="Class Name" description="Class Name Description" />
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="classname" type="text" default="" label="MOD_OUKAN_BM_CLASSNAME" description="MOD_OUKAN_BM_CLASSNAME_DESC" />
+				<field name="x" type="text" default="116.349396" label="MOD_OUKAN_BM_X" description="MOD_OUKAN_BM_X_DESC" />
+				<field name="y" type="text" default="39.985147" label="MOD_OUKAN_BM_Y" description="MOD_OUKAN_BM_Y_DESC" />
+				<field name="level" type="text" default="18" label="MOD_OUKAN_BM_LEVEL" description="MOD_OUKAN_BM_LEVEL_DESC" />
+				<field name="title" type="text" default="" label="MOD_OUKAN_BM_TITLE" description="MOD_OUKAN_BM_TITLE_DESC" />
+				<field
+					name="mapcontent"
+					type="textarea"
+					label="MOD_OUKAN_BM_MAPCONTENT"
+					cols="40" 
+					rows="5" 
+					size="120" 
+					filter="safehtml" 
+					description="MOD_OUKAN_BM_MAPCONTENT_DESC" />
+				<field name="width" type="text" default="697px" label="MOD_OUKAN_BM_WDITH" description="MOD_OUKAN_BM_WDITH_DESC" />
+				<field name="height" type="text" default="500px" label="MOD_OUKAN_BM_HEIGHT" description="MOD_OUKAN_BM_HEIGHT_DESC" />
+			</fieldset>
+		</fields>
+	</config>			
+</extension>

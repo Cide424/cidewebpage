@@ -1,0 +1,250 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	 font-family:"Helvetica Neue",Arial,sans-serif;;	
+}
+h1#lab_name{
+	padding-left:1.4em;
+	font-family: "Helvetica Neue",Arial,sans-serif;
+	color: #59C0E1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+hr{
+	margin:5px 0;
+	width:100%;
+}
+header {
+	background-color:#fff;
+	}
+footer{
+	background-color:#59C0E1;
+}
+nav{
+	background-color:#59c0e1;
+	}
+.search {
+	margin: 2em 1em 0 3.5em;
+	float: right;
+	}
+/* navbar coloring, copied from bootstrap.css */
+.navbar-inner {
+  min-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #59c0e1;
+  background-image: -moz-linear-gradient(top, #59c0e1, #59c0e1);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#59c0e1), to(#59c0e1));
+  background-image: -webkit-linear-gradient(top, #59c0e1, #59c0e1);
+  background-image: -o-linear-gradient(top, #59c0e1, #59c0e1);
+  background-image: linear-gradient(to bottom, #59c0e1, #59c0e1);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff59c0e1', endColorstr='#ff59c0e1', GradientType=0);
+  border: 0px solid #d4d4d4;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.065);
+  -moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.065);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.065);
+}
+/* nav bar text styling */
+.navbar .nav > li > a {
+  color: #333;
+  text-shadow: none;
+}
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: #fff;
+}
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color: #fff;
+  background-color: #00738b;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* this is the code for dropdown menus, taken from Protostar */
+nav .nav-child {
+	position: absolute;
+	top: 95%;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 160px;
+	padding: 5px 0;
+	margin: 2px 0 0;
+	list-style: none;
+	background-color: #00738b;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0,0,0,0.2);
+	*border-right-width: 2px;
+	*border-bottom-width: 2px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+nav .nav-child.pull-right {
+	right: 0;
+	left: auto;
+}
+nav .nav-child .divider {
+	*width: 100%;
+	height: 1px;
+	margin: 8px 1px;
+	*margin: -5px 0 5px;
+	overflow: hidden;
+	background-color: #e5e5e5;
+	border-bottom: 1px solid #fff;
+}
+nav .nav-child a {
+	display: block;
+	padding: 3px 20px;
+	clear: both;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 18px;
+	color: #fff;
+	white-space: nowrap;
+}
+nav .nav > li {
+	position: relative;
+}
+nav .nav > li:hover > .nav-child,
+nav .nav > li > a:focus + .nav-child {
+	display: block;
+}
+nav .nav-child:before {
+	position: absolute;
+	top: -7px;
+	left: 9px;
+	display: inline-block;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid #00738b;
+	border-left: 7px solid transparent;
+	border-bottom-color: rgba(0,0,0,0.2);
+	content: '';
+}
+nav .nav-child:after {
+	position: absolute;
+	top: -6px;
+	left: 10px;
+	display: inline-block;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid #00738b;
+	border-left: 6px solid transparent;
+	content: '';
+}
+nav .nav-child li > a:hover,
+nav .nav-child li > a:focus,
+nav .nav-child:hover > a {
+	text-decoration: none;
+	color: #fdcf00;
+	background-color: transparent;
+}
+
+/* main content styling */
+ .blog, .category-list, .blog-featured, .contact-category, #xmap, .categories-list, .login {
+	padding: 0 3.5em;
+	min-height: 450px;
+	margin-bottom: 3em;	
+}
+div#k2Container{
+	padding: 0 3.5em;
+	min-height: 450px;
+	margin-bottom: 3em;	
+	}
+	
+/* testimonal styling */
+.custom {
+	padding-top: 5em;
+}
+.custom blockquote {
+	background-color: #dbf1f8;
+	padding: 2px 2px 2px 7px;
+	border-left: 5px solid #59c0e1;	
+}
+
+/* breathing room on the right column */
+div.span3 .moduletable {
+	padding-right: 1em;
+}
+/*  breathing room on the right-bottom logo */
+
+div#footer1.span3{
+	padding:0 0 0em 3.5em;
+}
+
+
+	
+/* breadcrumb styling */
+.breadcrumb {
+	background-color: #fff;
+	padding-left: 2em;
+}
+
+/* 工具条 */
+div.itemToolbar{
+	margin:0;
+	}
+	
+div.itemToolbar {
+	padding:0;
+	margin:0;
+	height:1px;
+	border-radius:1px;
+}
+
+div#footer1 ul.nav.menu{
+	margin:5px;
+	font-size:14px;
+}
+div#footer1 li{
+	padding:3px;
+	line-height:normal;	
+}
+div#footer1.span3 .moduletable{
+	padding:0;
+	font-size:14px;
+}
+
+h3{
+	font-size:16px;
+}
+
+/* primary button styling */
+.btn-primary {
+  background-color: #2293b9;
+  background-image: -moz-linear-gradient(top, #2293b9, #1e82a4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2293b9), to(#1e82a4));
+  background-image: -webkit-linear-gradient(top, #2293b9, #1e82a4);
+  background-image: -o-linear-gradient(top, #2293b9, #1e82a4);
+  background-image: linear-gradient(to bottom, #2293b9, #1e82a4);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2293b9', endColorstr='#ff1e82a4', GradientType=0);
+  border-color: #1e82a4 #1e82a4 #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #1e82a4;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  color: #ffffff;
+  background-color: #1e82a4;
+  *background-color: #1e82a4;
+}
