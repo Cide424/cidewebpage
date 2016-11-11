@@ -71,4 +71,4 @@ Copyright:
 	* Distributed under the GNU General Public License version 2 or later
 	* See Licenses details at https://docs.joomla.org/Joomla_Licenses
 
-hahahah
+hahaha
