@@ -477,7 +477,7 @@ div.catItemHeader {}
 	div.catItemHeader span.catItemDateCreated {color:#999;font-size:11px;}
 	div.catItemHeader h3.catItemTitle {padding:4px 0 4px 0;margin:0;}
 	div.catItemHeader h3.catItemTitle span {}
-	div.catItemHeader h3.catItemTitle span sup {font-size:12px;color:#CF1919;text-decoration:none;} /* superscript */
+	div.catItemHeader h3.catItemTitle span sup {font-size:15px;color:#CF1919;text-decoration:none;} /* superscript */
 	div.catItemHeader span.catItemAuthor {display:block;padding:0;margin:0;}
 	div.catItemHeader span.catItemAuthor a {}
 	div.catItemHeader span.catItemAuthor a:hover {}
