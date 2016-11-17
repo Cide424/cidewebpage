@@ -25,9 +25,12 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
 	<?php echo $this->item->event->K2BeforeDisplay; ?>
 
 	<div class="catItemHeader">
+    	
 		<?php if($this->item->params->get('catItemDateCreated')): ?>
 		<!-- Date created -->
+        
 		<span class="catItemDateCreated">
+        	
 			<?php echo JHTML::_('date', $this->item->created , JText::_('K2_DATE_FORMAT_LC2')); ?>
 		</span>
 		<?php endif; ?>
@@ -35,7 +38,8 @@ K2HelperUtilities::setDefaultImage($this->item, 'itemlist', $this->params);
 	  <?php if($this->item->params->get('catItemTitle')): ?>
 	  <!-- Item title -->
 	  <h3 class="catItemTitle">
-			<?php if(isset($this->item->editLink)): ?>
+      		<img src="images/bluecircle.png" width="14" height="14">
+			<?php if(isset($this->item->editLink)):  ?>
 			<!-- Item edit link -->
 			<span class="catItemEditLink">
 				<a data-k2-modal="edit" href="<?php echo $this->item->editLink; ?>">

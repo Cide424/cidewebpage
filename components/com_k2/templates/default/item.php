@@ -224,7 +224,46 @@ defined('_JEXEC') or die;
 		($this->item->params->get('itemImageGalleryAnchor') && !empty($this->item->gallery)) ||
 		($this->item->params->get('itemCommentsAnchor') && $this->item->params->get('itemComments') && $this->item->params->get('comments'))
 	): ?>
-	<div class="itemToolbar">
+	<div class="itemLinks">
+
+		<?php if($this->item->params->get('itemCategory')): ?>
+		<!-- Item category -->
+		<div class="itemCategory">
+			<span><?php echo JText::_('K2_PUBLISHED_IN'); ?></span>
+			<a href="<?php echo $this->item->category->link; ?>"><?php echo $this->item->category->name; ?></a>
+		</div>
+		<?php endif; ?>
+
+		<?php if($this->item->params->get('itemTags') && count($this->item->tags)): ?>
+		<!-- Item tags -->
+		<div class="itemTagsBlock">
+			<span><?php echo JText::_('K2_TAGGED_UNDER'); ?></span>
+			<ul class="itemTags">
+				<?php foreach ($this->item->tags as $tag): ?>
+				<li><a href="<?php echo $tag->link; ?>"><?php echo $tag->name; ?></a></li>
+				<?php endforeach; ?>
+			</ul>
+			<div class="clr"></div>
+		</div>
+		<?php endif; ?>
+
+		<?php if($this->item->params->get('itemAttachments') && count($this->item->attachments)): ?>
+		<!-- Item attachments -->
+		<div class="itemAttachmentsBlock">
+			<span><?php echo JText::_('K2_DOWNLOAD_ATTACHMENTS'); ?></span>
+			<ul class="itemAttachments">
+				<?php foreach ($this->item->attachments as $attachment): ?>
+				<li>
+					<a title="<?php echo K2HelperUtilities::cleanHtml($attachment->titleAttribute); ?>" href="<?php echo $attachment->link; ?>"><img src="images/pdfpicture.png"></a>
+					<?php if($this->item->params->get('itemAttachmentsCounter')): ?>
+					<span>(<?php echo $attachment->hits; ?> <?php echo ($attachment->hits==1) ? JText::_('K2_DOWNLOAD') : JText::_('K2_DOWNLOADS'); ?>)</span>
+					<?php endif; ?>
+				</li>
+				<?php endforeach; ?>
+			</ul>
+		</div>
+		<?php endif; ?>
+		<div class="itemToolbar">
 		<ul>
 			<?php if($this->item->params->get('itemFontResizer')): ?>
 			<!-- Font Resizer -->
@@ -305,46 +344,6 @@ defined('_JEXEC') or die;
 		$this->item->params->get('itemTags') ||
 		$this->item->params->get('itemAttachments')
 	): ?>
-	<div class="itemLinks">
-
-		<?php if($this->item->params->get('itemCategory')): ?>
-		<!-- Item category -->
-		<div class="itemCategory">
-			<span><?php echo JText::_('K2_PUBLISHED_IN'); ?></span>
-			<a href="<?php echo $this->item->category->link; ?>"><?php echo $this->item->category->name; ?></a>
-		</div>
-		<?php endif; ?>
-
-		<?php if($this->item->params->get('itemTags') && count($this->item->tags)): ?>
-		<!-- Item tags -->
-		<div class="itemTagsBlock">
-			<span><?php echo JText::_('K2_TAGGED_UNDER'); ?></span>
-			<ul class="itemTags">
-				<?php foreach ($this->item->tags as $tag): ?>
-				<li><a href="<?php echo $tag->link; ?>"><?php echo $tag->name; ?></a></li>
-				<?php endforeach; ?>
-			</ul>
-			<div class="clr"></div>
-		</div>
-		<?php endif; ?>
-
-		<?php if($this->item->params->get('itemAttachments') && count($this->item->attachments)): ?>
-		<!-- Item attachments -->
-		<div class="itemAttachmentsBlock">
-			<span><?php echo JText::_('K2_DOWNLOAD_ATTACHMENTS'); ?></span>
-			<ul class="itemAttachments">
-				<?php foreach ($this->item->attachments as $attachment): ?>
-				<li>
-					<a title="<?php echo K2HelperUtilities::cleanHtml($attachment->titleAttribute); ?>" href="<?php echo $attachment->link; ?>"><?php echo $attachment->title; ?></a>
-					<?php if($this->item->params->get('itemAttachmentsCounter')): ?>
-					<span>(<?php echo $attachment->hits; ?> <?php echo ($attachment->hits==1) ? JText::_('K2_DOWNLOAD') : JText::_('K2_DOWNLOADS'); ?>)</span>
-					<?php endif; ?>
-				</li>
-				<?php endforeach; ?>
-			</ul>
-		</div>
-		<?php endif; ?>
-
 		<div class="clr"></div>
 	</div>
 	<?php endif; ?>
