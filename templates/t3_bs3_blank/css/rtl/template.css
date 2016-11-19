@@ -107,7 +107,7 @@ th {
 }
 td,
 tr td {
-  border-top: 1px solid #dddddd;
+  border-top: 0px solid #dddddd;
 }
 .cat-list-row0:hover,
 .cat-list-row1:hover {

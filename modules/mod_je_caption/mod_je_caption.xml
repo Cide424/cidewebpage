@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.3" type="module" client="site">
+	<name>JE Caption</name> 
+    <version>3.3</version>
+    <creationDate>February, 2015</creationDate>
+    <author>jExtensions.com</author>
+    <authorEmail>support@jExtensions.com</authorEmail>
+    <authorUrl>http://jExtensions.com</authorUrl>
+    <copyright>Copyright 2015 - jExtensions.com</copyright>
+    <license>GNU/GPL</license>
+	<description><![CDATA[
+	<h1 class="sub-heading">JE Image Caption</h1>	
+	<div class="description">Download more free extensions from <a href="http://jextensions.com/" target="_blank">jExtensions.com</a><br/>
+	Need help? <a href="http://jextensions.com/image-caption-module-joomla-2.5/" target="_blank">Click here to visit the support page</a>.<br/>
+	<span class="credits">Credits: <a href="http://alijafarian.com/jquery-image-hover-captions/" target="_blank" >alijafarian</a></span>
+	</div>
+		]]>
+	</description>
+	
+	
+	<files>
+		<filename module="mod_je_caption">mod_je_caption.php</filename>
+		<filename>index.html</filename>
+		<folder>css/</folder>
+		<folder>images/</folder>
+		<folder>js/</folder>
+		<folder>php/</folder>
+	</files>
+
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_je_caption/php">
+		<fieldset name="basic">
+			<field name="jQuery" type="list" default="0" label="jQuery" description="Enable or Disable the latest jQuery version. Make sure that jQuery is loaded only once on your website.">
+				<option value="0">Disable</option>
+				<option	value="1">Enable</option>
+			</field>
+			<field name="imgPath" type="media" label="Caption Image" description="Choose an image." />
+			<field name="maxW" type="text" default="300" label="Max Image Width" description="Maximum width of the image in pixels." />
+			
+			<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Display Settings&lt;/div&gt;" />
+			
+			<field name="captionAnim" type="list" default="0" label="Caption Animation" description="Enable or Disable the latest jQuery version. Make sure that jQuery is loaded only once on your website.">
+				<option value="0">Normal</option>
+				<option	value="1">Fade-In</option>
+				<option	value="2">Slide-Down</option>
+			</field>
+						
+			<field name="title" type="text" default="Caption Title Here" label="Caption Title" description="" />
+			<field name="text" type="textarea" filter="safehtml" cols="60" rows="5" default="" label="Caption Text" description="Caption text. HTML allowed." />
+			<field name="linkUrl" type="text" default="" label="Caption Link URL" description="" />
+			<field name="linkText" type="text" default=""  label="Caption Link Text" description="" />				
+
+			<field name="btnBg" type="jscolor" default="#08c" label="Button Color" description="Select color of title and text." />
+			<field name="btnBgT" type="jscolor" default="#fff" label="Button Text Color" description="Select color of title and text." />
+			
+			<field name="btnBgH" type="jscolor" default="#fff" label="Button Hover Color" description="Select color of title and text." />
+			<field name="btnBgTH" type="jscolor" default="#08c" label="Button Text Hover" description="Select color of title and text." />
+
+			<field type="asset" />
+			</fieldset>		
+		</fields>
+	</config>
+</extension>
