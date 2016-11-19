@@ -57,7 +57,7 @@ class JConfig {
 	public $feed_limit = '10';
 	public $feed_email = 'none';
 	public $log_path = 'D:\\wamp64\\www\\cidewebpage\\administrator/logs';
-	public $tmp_path = 'D:\\wamp64\www\\cidewebpage/tmp';
+	public $tmp_path = 'D:\\wamp64\\www\\cidewebpage/tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
 	public $memcache_persist = '1';
