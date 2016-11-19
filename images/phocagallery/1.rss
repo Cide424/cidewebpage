@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss xmlns:media="http://search.yahoo.com/mrss" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+ <channel>
+  <atom:icon>http://localhost:8088/cidewebpage/media/com_phocagallery/images/icon-phocagallery.png</atom:icon>
+
+  <title>Phoca Gallery</title>
+  <link>http://www.phoca.cz/</link>
+  <description>Phoca Gallery</description>
+   <item>
+    <title>xxx</title>
+    <link>http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_t0196bdd7eae28d3761.jpg</link>
+    <description>[gallery ID=1]
+学术讲座通知 </description>
+    <media:thumbnail url="http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_t0196bdd7eae28d3761.jpg" />
+    <media:content url="http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_t0196bdd7eae28d3761.jpg" />
+    <guid isPermaLink="false">1-phocagallerypiclenscode-t0196bdd7eae28d3761.jpg</guid>
+   </item>
+
+   <item>
+    <title>1</title>
+    <link>http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_1.jpg</link>
+    <description></description>
+    <media:thumbnail url="http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_1.jpg" />
+    <media:content url="http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_1.jpg" />
+    <guid isPermaLink="false">1-phocagallerypiclenscode-1.jpg</guid>
+   </item>
+
+   <item>
+    <title>1</title>
+    <link>http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_1.png</link>
+    <description></description>
+    <media:thumbnail url="http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_1.png" />
+    <media:content url="http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_1.png" />
+    <guid isPermaLink="false">1-phocagallerypiclenscode-1.png</guid>
+   </item>
+
+   <item>
+    <title>2</title>
+    <link>http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_2.jpg</link>
+    <description></description>
+    <media:thumbnail url="http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_2.jpg" />
+    <media:content url="http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_2.jpg" />
+    <guid isPermaLink="false">1-phocagallerypiclenscode-2.jpg</guid>
+   </item>
+
+   <item>
+    <title>3</title>
+    <link>http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_3.jpg</link>
+    <description></description>
+    <media:thumbnail url="http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_3.jpg" />
+    <media:content url="http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_3.jpg" />
+    <guid isPermaLink="false">1-phocagallerypiclenscode-3.jpg</guid>
+   </item>
+
+   <item>
+    <title>1361333580</title>
+    <link>http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_1361333580-2516386611.jpg</link>
+    <description></description>
+    <media:thumbnail url="http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_1361333580-2516386611.jpg" />
+    <media:content url="http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_1361333580-2516386611.jpg" />
+    <guid isPermaLink="false">1-phocagallerypiclenscode-1361333580-2516386611.jpg</guid>
+   </item>
+
+   <item>
+    <title>14175009134933485</title>
+    <link>http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_14175009134933485.jpeg</link>
+    <description></description>
+    <media:thumbnail url="http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_14175009134933485.jpeg" />
+    <media:content url="http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_14175009134933485.jpeg" />
+    <guid isPermaLink="false">1-phocagallerypiclenscode-14175009134933485.jpeg</guid>
+   </item>
+
+   <item>
+    <title>t0196bdd7eae28d3761</title>
+    <link>http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_t0196bdd7eae28d3761.jpg</link>
+    <description></description>
+    <media:thumbnail url="http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_t0196bdd7eae28d3761.jpg" />
+    <media:content url="http://localhost:8088/cidewebpage/images/phocagallery/thumbs/phoca_thumb_l_t0196bdd7eae28d3761.jpg" />
+    <guid isPermaLink="false">1-phocagallerypiclenscode-t0196bdd7eae28d3761.jpg</guid>
+   </item>
+
+ </channel>
+</rss>

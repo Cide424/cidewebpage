@@ -14,8 +14,8 @@ class JConfig {
 	public $dbtype = 'mysqli';
 	public $host = 'localhost';
 	public $user = 'root';
-	public $password = '';
-	public $db = 'website';
+	public $password = 'derekzhou';
+	public $db = 'website-1';
 	public $dbprefix = 'o2kj3_';
 	public $live_site = '';
 	public $secret = 'JsT4ML4HxkW3Etpp';
@@ -56,8 +56,8 @@ class JConfig {
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
 	public $feed_email = 'none';
-	public $log_path = 'C:\xampp\htdocs\joomla_new\\administrator/logs';
-	public $tmp_path = 'C:\xampp\htdocs\joomla_new/tmp';
+	public $log_path = 'D:\\wamp64\\www\\cidewebpage\\administrator/logs';
+	public $tmp_path = 'D:\\wamp64\www\\cidewebpage/tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
 	public $memcache_persist = '1';
